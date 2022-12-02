@@ -1,14 +1,80 @@
-h1 {
-  font-family: "Poppins";
-  font-style: normal;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400 px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.4)),
+  url("../images/Toronto_skyline_in_September_2008.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  letter-transform: uppercase;
+  background-color: white;
+  color: #272044;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1;
+  margin: 120px 0;
+}
+
+header h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
 footer {
-  font-family: "Poppins";
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
